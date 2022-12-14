@@ -7,23 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="src/style.css">
+  <script src="https://kit.fontawesome.com/645d0fe86a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <section class="hero">
     <nav>
       <img class="logo" src="src/images/logofdm.png" alt="Julian Martins Logo">
-      <ul>
-        <li>About me</li>
-        <li>Projects</li>
-        <li>Contact</li>
+      <ul id="nav-list">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact</a></li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <div class="hero-area">
       <div class="hero-text">
         <h1>Julian Martins</h1>
         <p>Aspiring Full Stack Developer</p>
-        <div class="button">About me</div>
+        <div class="button"><a href="#about-me">About me</a></div>
       </div>
       <div class="socials">
         <div>
@@ -50,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="sub-section">
+  <section class="sub-section" id="about-me">
     <div class="information">
       <h2>About Me</h2>
       <p>Hello. My Name is Julian Martins. <br>
@@ -60,16 +64,43 @@
       <img class="headshot" src="src/images/headshot.jpg" alt="A picture of me">
     </div>
   </section>
-  <section class="sub-section-alternative">
+  <section class="sub-section-alternative" id="projects">
     <h2>Projects</h2>
     <div class="project-container">
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
+      <div class="project-card">
+        <img src="src/images/project1.jpg" alt="Project One Image" class="project-image">
+        <h3>Project One</h3>
+        <p class="subtext">This is my project and some text about it.</p>
+        <hr>
+        <p class="subtext"><a class="project-links" href="">View here</a></p>
+      </div>
+      <div class="project-card">
+        <img src="src/images/project2.jpg" alt="Project Two Image" class="project-image">
+        <h3>Project Two</h3>
+        <p class="subtext">This is my project and some text about it.</p>
+        <hr>
+        <p class="subtext"><a class="project-links" href="">View here</a></p>
+      </div>
+      <div class="project-card">
+        <img src="src/images/project3.png" alt="Project Three Image" class="project-image">
+        <h3>Project Three</h3>
+        <p class="subtext">This is my project and some text about it.</p>
+        <hr>
+        <p class="subtext"><a class="project-links" href="">View here</a></p>
+      </div>
+      <div class="project-card">
+        <img src="src/images/project4.jpg" alt="Project Four Image" class="project-image">
+        <h3>Project Four</h3>
+        <p class="subtext">This is my project and some text about it.</p>
+        <hr>
+        <p class="subtext"><a class="project-links" href="">View here</a></p>
+      </div>
     </div>
   </section>
-  <footer></footer>
+  <footer id="contact-me">
+    <h2>Contact me</h2>
+    <p>chacka@mail.dev</p>
+  </footer>
 
 
   <script src="src/script.js"></script>
